@@ -25,11 +25,11 @@ Se déplacer dans le dossier crée `cd vagrant-box `
 Avant tous paramétrer le nombre de coeurs à attribuer à la machine et la ram dans la fichier VagrantFile (attention a ne pas dépasser la RAM ni le nombre de processeurs de la machine).
 
 
-config.vm.provider "virtualbox" do |v|
-v.memory = 4096
-v.cpus = 4 
-end
-# sur cette configuration, la machine virtuelle possède donc 4 coeurs et 4 GO de RAM
+        config.vm.provider "virtualbox" do |v|
+        v.memory = 4096
+        v.cpus = 4 
+        end
+        # sur cette configuration, la machine virtuelle possède donc 4 coeurs et 4 GO de RAM
 
 
 Après cela effectuer la commande `vagrant up` cela créera la machine virtuelle.
@@ -47,8 +47,8 @@ Dès que la connexion ssh est effectué nous allons terminé l'installation de l
 Nous allons exécuter le script d'installation présent dans le répertoire /vagrant 
 
 
-cd /vagrant
-./install.sh
+        cd /vagrant
+        ./install.sh
 
 
 Dès que l'exécution du script est terminée, vous pouvez commencer.
